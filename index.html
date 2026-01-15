@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J08B8PFETT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J08B8PFETT');
+</script>
+<!---google analyics-->
 <title>PetWorld</title>
  <link rel="icon" href="./image/cow1.jpg">
 </head>
@@ -71,11 +81,19 @@
 <!--<form id="frm"   action="https://formspree.io/f/mpwrpzda"
   method="POST">-->
 <b><i>
-<label> <p id="yo1"> Which pet do you like th most</p>eg:Cow<br><input type="text" name="like_pet"></lable><br>
+<label> <p id="yo1"> Which pet do you like the most</p>eg:Cow<br><input type="text" name="like_pet"></lable><br>
 <label> <p id="yo1"> About what pet do you want to know</p>eg:Sheep<br><input type="text" name="request_pet"></lable><br>
-<p id="yo1">Tell us know about you</p>
-<label>Your Name <br><input type="Your Name" name="name"> <br><br>
-<label>Your City <br><input type="city" name="city"></label><br><br>
+<p id="yo1">Tell us about you</p>
+<label for="name">Your Name <br><input type="Your Name" id="name" name="name"> <br><br>
+<label for="city">Your City <br><input type="city" id="city" name="city"></label><br><br>
+<br>
+<label for="rating">How do you like our website</label>
+<select id="rating" name="rating">
+  <option>Very Good</option>
+  <option>Good</option>
+  <option>Need Improvement</option>
+</select>
+<br><br>
 <label><input type="Submit"></label>
 <b></i>
 
